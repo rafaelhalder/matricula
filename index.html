@@ -71,48 +71,71 @@
           </fieldset>
           <fieldset class="address">
             <legend>Endereço residencial</legend>
-          <div class="input-wrapper">
-            <label for="cep">CEP</label><input type="text" name="cep" id="cep" />
-          </div>
-          <div class="flex">
-            <div class="input-wrapper flex-1">
-              <label for="street">RUA</label>
-              <input type="text" name="street" id="street" value="TUPI" disabled />
+            <div class="input-wrapper">
+              <label for="cep">CEP</label><input type="text" name="cep" id="cep" />
             </div>
-            <div class="input-wrapper flex-2">
-              <label for="number">Numero</label><input type="number" name="number" id="number"  />
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="street">RUA</label>
+                <input type="text" name="street" id="street" value="TUPI" disabled />
+              </div>
+              <div class="input-wrapper flex-2">
+                <label for="number">Numero</label><input type="number" name="number" id="number" />
+              </div>
             </div>
-          </div>
-          <div class="flex">
-            <div class="input-wrapper flex-1">
-              <label for="city">Cidade</label>
-              <input type="text" name="city" id="city" value="SÃO PAULO" disabled/>
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" value="SÃO PAULO" disabled />
+              </div>
+              <div class="input-wrapper flex-2">
+                <label for="state">Estado</label><input type="text" name="state" value="SP" id="state" disabled />
+              </div>
             </div>
-            <div class="input-wrapper flex-2">
-              <label for="state">Estado</label><input type="text" name="state" value="SP" id="state" disabled />
-            </div>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="gardian">
-          <legend>Informações do responsável</legend>
-          <div class="input-wrapper">
-            <label for="gardian">Nome do responsável</label>
-            <input type="text" id="gardian"><small>Principal responsável</small>
-          </div>
-          <div class="input-wrapper">
-            <label for="phone">Telefone:</label>
-            <input type="text" id="phone" placeholder="(41) 9 9999-9999">
-          </div>
-          <div class="input-wrapper">
-            <label for="mail">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <div class="error">
-              <img src="assets/icons/alert-circle.svg" alt="icone de alerta">
-              <span>Insira um e-mail válido</span>
+          <fieldset class="gardian">
+            <legend>Informações do responsável</legend>
+            <div class="input-wrapper">
+              <label for="gardian">Nome do responsável</label>
+              <input type="text" id="gardian"><small>Principal responsável</small>
             </div>
-          </div>
-        </fieldset>
+            <div class="input-wrapper">
+              <label for="phone">Telefone:</label>
+              <input type="text" id="phone" placeholder="(41) 9 9999-9999">
+            </div>
+            <div class="input-wrapper">
+              <label for="mail">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="icone de alerta">
+                <span>Insira um e-mail válido</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="enroll-options">
+
+            <legend>Opções de matrícula</legend>
+            <div class="input-wrapper">
+              <label for="Selecione o turno"></label>
+              <div class="radio-wrapper">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="morning" id="morning">
+                  <img src="assets/icons/sun-cloud-02.svg" alt="">
+                  <label for="morning"> Manhã</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="evening" id="evening">
+                  <img src="assets/icons/sun-02.svg" alt="">
+                  <label for="evening">Tarde</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
@@ -124,7 +147,7 @@
           <p>Inscreva seu filho em nossa escola e veja-o florescer</p>
         </header>
         <img src="assets/Illustration.svg" alt="Ilustração de um professor com uma criança" />
-  
+
       </div>
 
     </aside>
